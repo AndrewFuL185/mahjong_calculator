@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <h3>您的此次结果如下</h3>
+    <table border="1">
+      <tr>
+      {% for head in heads%}
+      <th>{{head}}</th>
+      {% endfor %}
+      </tr>
+      {% for result in results%}
+      <tr>
+      <td>{{result.role}}</td>
+      <td>{{result.limit}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+</body>
+</html>

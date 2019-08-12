@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <style type="text/css">
+            @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
+
+            body {
+              background-color: #ffffff;
+              font-family: Arial, sans-serif;
+              /*font-size: 10px;*/
+              font-weight: normal;
+              text-rendering: optimizeLegibility;
+            }
+
+            div.table-title {
+              display: block;
+              margin: auto;
+              max-width: none;
+              /* padding:5px; */
+              width: auto;
+            }
+
+            .table-title h3 {
+               color: #000000;
+               /*font-size: 10px;*/
+               font-weight: 400;
+               font-style:normal;
+               font-family: "Roboto", helvetica, arial, sans-serif;
+               /*text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);*/
+               /*text-transform:uppercase;*/
+               text-overflow:ellipsis;
+               word-break:keep-all;
+               white-space:nowrap;
+            }
+
+
+            /*** Table Styles **/
+
+            .table-fill {
+              background: white;
+              border-radius:3px;
+              border-collapse: collapse;
+              height: 320px;
+              margin: auto;
+              max-width: none;
+              /*padding:5px;*/
+              width: auto;
+              box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+              animation: float 5s infinite;
+            }
+
+            th {
+              color:#FFF;;
+              background:#1b1e24;
+              border-bottom:1px solid #9ea7af;
+              border-right: 1px solid #343a45;
+              /*font-size:10px;*/
+              font-weight: 10;
+              /*padding:10px;*/
+              text-align:left;
+              /*text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);*/
+              vertical-align:middle;
+            }
+
+            th:first-child {
+              border-top-left-radius:3px;
+            }
+
+            th:last-child {
+              border-top-right-radius:3px;
+              border-right:none;
+            }
+
+            tr {
+              border-top: 1px solid #C1C3D1;
+              border-bottom-: 1px solid #C1C3D1;
+              color:#666B85;
+              /*font-size:10px;*/
+              font-weight:normal;
+              /*text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);*/
+            }
+
+            tr:hover td {
+              background:#4E5066;
+              color:#FFFFFF;
+              border-top: 1px solid #22262e;
+            }
+
+            tr:first-child {
+              border-top:none;
+            }
+
+            tr:last-child {
+              border-bottom:none;
+            }
+
+            tr:nth-child(odd) td {
+              background:#EBEBEB;
+            }
+
+            tr:nth-child(odd):hover td {
+              background:#4E5066;
+            }
+
+            tr:last-child td:first-child {
+              border-bottom-left-radius:3px;
+            }
+
+            tr:last-child td:last-child {
+              border-bottom-right-radius:3px;
+            }
+
+            td {
+              background:#FFFFFF;
+              padding:10px;
+              text-align:left;
+              vertical-align:middle;
+              font-weight:300;
+              /*font-size:10px;*/
+              /*text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);*/
+              border-right: 1px solid #C1C3D1;
+            }
+
+            td:last-child {
+              border-right: 0px;
+            }
+
+            th.text-left {
+              text-align: left;
+            }
+
+            th.text-center {
+              text-align: center;
+            }
+
+            th.text-right {
+              text-align: right;
+            }
+
+            td.text-left {
+              text-align: left;
+            }
+
+            td.text-center {
+              text-align: center;
+            }
+
+            td.text-right {
+              text-align: right;
+            }
+        </style>
+    <title>Table Style</title>
+    <meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; width=device-width;">
+</head>
+<body>
+    <h3>您的此次结果如下</h3>
+    <table>
+    <tr>
+        
+    <th>角色类型</th>
+    <th>输赢额</th> 
+    </tr>
+    <tr><td>赢家</td><td>8</td></tr><tr><td>庄家</td><td>-4</td></tr><tr><td>非庄家</td><td>-2</td></tr><tr><td>牌型</td><td>门清</td></tr>
+    </table>
+</body>
+</html>
