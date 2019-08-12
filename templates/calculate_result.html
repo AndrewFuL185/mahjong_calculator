@@ -1,6 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<body>
+{% extends 'base.html' %}
+
+    {% block content %}
     <h3>您的此次结果如下</h3>
     <table border="1">
       <tr>
@@ -15,5 +15,8 @@
       </tr>
       {% endfor %}
     </table>
-</body>
-</html>
+    <p>
+    </p>
+    <div><a href="/Mahjong">返回</a></div>
+
+    {% endblock %}
