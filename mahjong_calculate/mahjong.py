@@ -31,6 +31,8 @@ def Mahjong_settle(hu_type,base = 2):
         other_out = -2**np.sum([fan_amt[mm] for mm in type])/2*2**len(is_upstairs)*base
         zhuang_out = -2*2**np.sum([fan_amt[mm] for mm in type])/2*2**len(is_upstairs)*base
         win = 2*2**np.sum([fan_amt[mm] for mm in type])*2**len(is_upstairs)*base
+    is_upstairs = ",".join(is_upstairs)
+    type.append(is_upstairs)
     type = ",".join(type)
     res = [{"role":'赢家', "limit": win},
             {"role":'庄家', "limit": zhuang_out},
